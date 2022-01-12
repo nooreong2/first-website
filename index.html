@@ -11,11 +11,11 @@
     color: red;
     font-size:60px;
     text-align: center;
-    text-decoration:overline;
+    margin-bottom: 20px;
   }
   img{
     height:300px;
-    width:300px;
+    width:600px;
   }
   #active{
     color:red;
@@ -23,27 +23,55 @@
   #image{
     text-align:center;
   }
+  #grid{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  #element{
+    text-align: center;
+  }
+  #element h4{
+    margin:2px;
+  }
+  #element ol{
+    border-right:2px solid gray;
+    margin-top: 0px;
+  }
+  #list{
+    text-align: center;
+  }
+  #list ol{
+    margin-top: 0px;
+  }
+  #list h4{
+    margin:2px;
+  }
 </style>
 </head>
 <body>
 <h1>누렁's HTML Practice </h1>
 <h2 style = "text-align:center">주 목표 : 게시판 만들기</h2>
-<br></br>
 <div id="image">
   <img src = "image/모야호.jpg" >
 </div>
 <br></br>
-<strong>목차</strong>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-    <li><a href="board.html">게시판 demo.ver</a></li>
-  </ol>
-<strong>해야 하는 공부들</strong>
-<ol>
-  <h4><li>HTML 기본 공부하기</li></h4>
-  <h4><li>CSS 기본 공부하기</li></h4>
-  <h4><li>JavaScript 기본 공부하기</li></h>
-</ol>
-</body>
+<div id="grid">
+  <div id="element">
+  <h3 style="margin:0; border:2px solid gray">List</h3>
+    <ol>
+      <h4 style="margin-top:0px"><li><a href="1.html">HTML</a></li></h4>
+      <h4><li><a href="2.html">CSS</a></li></h4>
+      <h4><li><a href="3.html">JavaScript</a></li></h4>
+      <h4><li><a href="board.html">Board demo.ver</a></li></h4>
+    </ol>
+  </div>
+  <div id = "list">
+    <h3 style="margin:0; border:2px solid gray; border-left:none">To do</h3>
+    <ol>
+      <h4 style="margin-top:0px"><li>HTML base study</li></h4>
+      <h4><li>CSS base study</li></h4>
+      <h4><li>JavaScript base study</li></h>
+    </ol>
+  </div>
+</div>
+    </body>

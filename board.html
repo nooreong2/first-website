@@ -4,26 +4,65 @@
     <meta charset="utf-8">
     <title></title>
     <style>
-    #board{
-      border:5px solid pink;
+    .board{
+      display:grid;
+      grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+      border:5px solid gray;
+
+      text-align:center;
+      font-size: 25px;
+    }
+    .board div{
+      border-right:5px gray solid;
+    }
+    #contents{
+      border-top: 2px gray solid;
+    }
+
+    #contents2{
       display:grid;
       grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
     }
-    div{
-      border:5px solid gray;
-      text-align:center;
+    #contents2 div{
+        border-top: 2px gray solid;
     }
     </style>
   </head>
   <body>
     <h1 style="text-align:center; font-size:60px;">게시판</h1>
-    <h2 style="text-align:left; font-size:20px;">총 0건의 게시물</h2>
-    <div id="board">
+    <h2 style="text-align:left; font-size:30px;">총 0건의 게시물</h2>
+    <div class="board">
       <div>번호</div>
       <div>제목</div>
       <div>첨부파일</div>
       <div>작성일</div>
       <div>조회수</div>
+
+      <div id="contents">1.</div>
+      <div id="contents">
+        <a href="1.html">Information about HTML</a>
+      </div>
+      <div id="contents">none</div>
+      <div id="contents">2022.01.12</div>
+      <div id="contents">1</div>
+
+      <div id="contents">2.</div>
+      <div id="contents">
+        <a href="2.html">Information about CSS</a>
+      </div>
+      <div id="contents">none</div>
+      <div id="contents">2022.01.12</div>
+      <div id="contents">3</div>
+
+      <div id="contents">3.</div>
+      <div id="contents">
+        <a href="3.html">Information about JavaScript</a>
+      </div>
+      <div id="contents">none</div>
+      <div id="contents">2022.01.12</div>
+      <div id="contents">5</div>
     </div>
+
+
   </body>
 </html>
