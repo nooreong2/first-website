@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    #person_info{
+      display:grid;
+      grid-template:1fr 1fr
+    }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align:center; font-size:40px; color:magenta">이용자 설문 조사</h1>
+    <div id="person_info">
+    <form action = "#" accept-charset="utf-8" method = "post">
+      <div>
+      <fieldset style = "width:300px; height:300px;">
+        <legend>개인 정보 입력</legend>
+              이름 : <input type="text" name="name"/><br></br>
+              나이 : <input type="text" name="age"/><br></br>
+              성별 : 남<input type = "radio" name = "gender" />
+                     여<input type = "radio" name="gender" /><br><br>
+              아이디 : <input type="text" name="id"/><br><br>
+      </fieldset>
+      </div>
+      <br>
+      <div >
+        <fieldset style = "width:500px; height:500px">
+          <legend>취미 활동</legend>
+                취미 : <input type="text" name="hobby"/><br></br>
+                특기 : <input type="text" name="specialty"/><br></br>
+                기타 사항 :<br><br>
+                <input type="text" name="submit" style="width:200px; height:100px;"><br><br>
+                <input type="submit" value = "submit"/>
+                <input type="reset" value="reset"/><br><br>
+        </fieldset>
+      </div>
+
+    </form>
+  </div>
+  </body>
+</html>
